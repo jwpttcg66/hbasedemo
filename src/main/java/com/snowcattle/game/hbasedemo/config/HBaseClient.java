@@ -1,4 +1,6 @@
+package com.snowcattle.game.hbasedemo.config;
 
+import com.snowcattle.game.hbasedemo.config.HbaseConfig;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.hbase.Cell;
 import org.apache.hadoop.hbase.CompareOperator;

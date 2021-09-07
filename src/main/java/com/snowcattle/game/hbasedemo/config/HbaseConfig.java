@@ -1,3 +1,4 @@
+package com.snowcattle.game.hbasedemo.config;
 
 import com.snowcattle.game.hbasedemo.config.HbaseProperties;
 import org.apache.hadoop.hbase.HBaseConfiguration;
