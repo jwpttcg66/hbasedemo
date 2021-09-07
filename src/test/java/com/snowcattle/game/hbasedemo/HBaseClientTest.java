@@ -56,46 +56,46 @@ public class HBaseClientTest {
 
 	}
 
-	@Test
-	public void deleteRow() throws IOException {
-		hBaseClient.deleteRow(TABLE, "2");
-	}
-
-
-	@Test
-	public void deleteColumnFamily() throws IOException {
-		hBaseClient.deleteColumnFamily(TABLE, "1", TABLE_FAM_2);
-	}
-
-	@Test
-	public void deleteColumn() throws IOException {
-		hBaseClient.deleteColumn(TABLE, "1", TABLE_FAM_2, "action");
-	}
-
-	@Test
-	public void deleteTable() throws IOException {
-		hBaseClient.deleteTable(TABLE);
-	}
-
-	@Test
-	public void getValue() {
-		String result = hBaseClient.getValue(TABLE, "1", TABLE_FAM_2, "time");
-		System.out.println(result);
-
-	}
-
-	@Test
-	public void selectOneRow() throws IOException {
-		hBaseClient.selectOneRow(TABLE, "1");
-	}
-
-	@Test
-	public void scanTable() throws IOException {
-		hBaseClient.scanTable(TABLE, "{FILTER=>\"PrefixFilter('2019')\"");
-	}
-
-	@Test
-	public void tableExists() throws IOException {
-		System.out.println(hBaseClient.tableExists(TABLE));
-	}
+//	@Test
+//	public void deleteRow() throws IOException {
+//		hBaseClient.deleteRow(TABLE, "2");
+//	}
+//
+//
+//	@Test
+//	public void deleteColumnFamily() throws IOException {
+//		hBaseClient.deleteColumnFamily(TABLE, "1", TABLE_FAM_2);
+//	}
+//
+//	@Test
+//	public void deleteColumn() throws IOException {
+//		hBaseClient.deleteColumn(TABLE, "1", TABLE_FAM_2, "action");
+//	}
+//
+//	@Test
+//	public void deleteTable() throws IOException {
+//		hBaseClient.deleteTable(TABLE);
+//	}
+//
+//	@Test
+//	public void getValue() {
+//		String result = hBaseClient.getValue(TABLE, "1", TABLE_FAM_2, "time");
+//		System.out.println(result);
+//
+//	}
+//
+//	@Test
+//	public void selectOneRow() throws IOException {
+//		hBaseClient.selectOneRow(TABLE, "1");
+//	}
+//
+//	@Test
+//	public void scanTable() throws IOException {
+//		hBaseClient.scanTable(TABLE, "{FILTER=>\"PrefixFilter('2019')\"");
+//	}
+//
+//	@Test
+//	public void tableExists() throws IOException {
+//		System.out.println(hBaseClient.tableExists(TABLE));
+//	}
 }
